@@ -46,3 +46,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* end reset */
+html {
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: #ffa500;
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
