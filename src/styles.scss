@@ -66,6 +66,9 @@ main {
     justify-content: center;
     h1 {
       text-align: center;
+      sup {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -73,4 +76,8 @@ main {
 h1 {
   font-size: 36px;
   font-weight: bold;
+}
+
+sup {
+  vertical-align: super;
 }
