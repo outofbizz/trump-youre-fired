@@ -64,19 +64,27 @@ main {
   animation: 12s background-colors infinite;
   header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     h1 {
+      margin-bottom: 20px;
       text-align: center;
       sup {
         font-size: 24px;
       }
     }
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: red;
+    }
   }
 }
 
-h1 {
+h1, .h1 {
   font-size: 36px;
   font-weight: bold;
+  display: block;
 }
 
 sup {
