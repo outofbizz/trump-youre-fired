@@ -15,7 +15,7 @@ module.exports = {
     publicPath: "/lib/",
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.scss$/,
       use: extractSass.extract({
         use: [{
@@ -24,8 +24,17 @@ module.exports = {
         }, {
           loader: "sass-loader",
         }],
-        fallback: "style-loader"
+        fallback: "style-loader",
       }),
+    }, {
+      test: /\.js$/,
+      use: {
+        loader: "babel-loader",
+        options: { presets: ["es2015", "stage-0", "react"] },
+      }
+    }, {
+      test: /\.jpg$/,
+      use: ["file-loader", "image-webpack-loader"],
     }],
   },
   plugins: [
